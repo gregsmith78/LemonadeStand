@@ -8,33 +8,29 @@ namespace LemonadeStand
 {
     public class Weather
     {
-        double temperature;
-        string bright;
-        //int sunny;
-       // int cloudy;
-       // int rainy;
+     
 
-        public Weather()
+        public void WeatherGenerator()
         {
+            double temperature;
+            string bright;
             Random temp = new Random();
             temperature = temp.Next(65, 100);
-           // Console.WriteLine(temperature);
-           // Console.ReadLine();
 
             if (temperature <= 74)
             {
-                Console.WriteLine("The temperature is" +temperature+ " a bit cool and " + bright);
+                Console.WriteLine("The temperature is " +temperature+ " a bit cool and ");
             }
-            else if (temperature < 85)
+            else if (temperature < 90)
             {
-                Console.WriteLine("The temperature is " +temperature+ " hot outside and " + bright);
+                Console.WriteLine("The temperature is " +temperature+ " hot outside and ");
             } 
             else
             {
-                Console.WriteLine("The temperature is " +temperature+ " a scorcher and " + bright);
+                Console.WriteLine("The temperature is " +temperature+ " a scorcher and ");
             }
             Random brite = new Random();
-            int feel = brite.Next(1, 4);
+            int feel = brite.Next(1, 5);
 
             if (feel == 1)
             {
@@ -58,9 +54,10 @@ namespace LemonadeStand
             }
 
 
-
+           // return temperature;
 
 
         }
+      
     }
 }
