@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-   public class Day
+    class Player
     {
-        Weather dayWeather = new Weather();
-        //Customer customer = new Customer();
-        Store store = new Store();
-    
-  
+        string name;
     }
 }

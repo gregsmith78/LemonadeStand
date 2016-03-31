@@ -17,6 +17,9 @@ namespace LemonadeStand
             Random temp = new Random();
             temperature = temp.Next(65, 100);
 
+            Console.WriteLine("Welcome to your first day of selling lemonade! You have a budget of $15.00.");
+            Console.WriteLine();
+
             if (temperature <= 74)
             {
                 Console.WriteLine("The temperature is " +temperature+ " a bit cool and ");

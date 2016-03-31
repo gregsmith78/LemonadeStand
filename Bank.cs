@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Bank : Inventory
+   /* class Bank //: Inventory
     {
        // Customer greg = new Customer(10);
         double balance = 10.00;
@@ -24,5 +24,5 @@ namespace LemonadeStand
             return moneySpent;
         }
 
-    }
+    }*/
 }
